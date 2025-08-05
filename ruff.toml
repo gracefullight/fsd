@@ -18,8 +18,9 @@ ignore = [
     "D103", # Missing docstring in public function
     "D104", # Missing docstring in public package
     "D107", # Missing docstring in __init__
+    "T201", # Print statement prohibition
 
-    # 충돌하는 규칙 무시
+    # Conflicts with formatter
     "D203",   # one-blank-line-before-class
     "D213",   # multi-line-summary-second-line
     "COM812", # trailing-comma-missing (conflicts with formatter)
