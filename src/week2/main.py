@@ -19,6 +19,27 @@ class Kangaroo(Animal):
         print(f"{self.name} is jumping.")
 
 
+class Bird:
+    def make_sound(self) -> None:
+        print("Tweet tweet!")
+
+
+class Emu(Bird):
+    def make_sound(self) -> None:
+        print("Grunt!")
+
+
+def speak(bird: Bird) -> None:
+    bird.make_sound()
+
+
 def run_week2() -> None:
     koko = Koala("koko", 4)
     koko.greet()
+
+    kang = Kangaroo("kang", 3)
+    kang.greet()
+    kang.jump()
+
+    speak(Bird())
+    speak(Emu())
