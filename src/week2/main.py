@@ -1,10 +1,22 @@
-class Koala:
+class Animal:
     def __init__(self, name: str, age: int) -> None:
         self.name = name
         self.age = age
 
     def greet(self) -> None:
         print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+
+    def eat(self) -> None:
+        print(f"{self.name} is eating.")
+
+
+class Koala(Animal):
+    pass
+
+
+class Kangaroo(Animal):
+    def jump(self) -> None:
+        print(f"{self.name} is jumping.")
 
 
 def run_week2() -> None:
