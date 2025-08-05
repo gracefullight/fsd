@@ -1,7 +1,8 @@
+from week2.main import run_week2
+
+
 def main() -> None:
-    """Serve as the main entry point for the application."""
-    # Ignore T20 rule (print statement prohibition)
-    print("Hello from starter!")  # noqa: T201
+    run_week2()
 
 
 if __name__ == "__main__":
