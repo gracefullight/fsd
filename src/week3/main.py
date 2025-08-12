@@ -2,6 +2,15 @@ from random import randint
 from typing import Any
 
 
+class Bank:
+    def __init__(self, name: str) -> None:
+        self.name = name
+
+    def main(self) -> None:
+        deposit = float(input("Amount to deposit $"))
+        print(f"Amount ${deposit:.2f} deposited")
+
+
 class Customer:
     def __init__(self, name: str, gender: str) -> None:
         self.customerId = randint(1, 100)
