@@ -1,7 +1,8 @@
-from week2.main import run_week2
+from .week2.main import run_week2
 
 
 def main() -> None:
+    print("Hello from starter!")
     run_week2()
 
 

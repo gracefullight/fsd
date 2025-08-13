@@ -8,6 +8,7 @@ class Bank:
 
     def main(self) -> None:
         deposit = float(input("Amount to deposit $"))
+
         print(f"Amount ${deposit:.2f} deposited")
 
 
@@ -43,6 +44,3 @@ class BankAccount:
 
     def show_balance(self) -> None:
         print(self.balance)
-
-
-bank_a = BankAccount("Saving")
