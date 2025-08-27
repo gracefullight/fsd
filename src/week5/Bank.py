@@ -2,13 +2,19 @@ class Bank:
     def __init__(self) -> None:
         self.balance = 1000.0
 
+    def get_initial_balance(self) -> float:
+        return float(input("Starting balance $"))
+
+    def get_user_input(self, input_for: str) -> float:
+        return float(input(f"Amount to {input_for} $"))
+
     def deposit(self) -> None:
-        deposit_amount = float(input("Enter deposit amount: "))
+        deposit_amount = self.get_user_input("deposit")
         self.balance += deposit_amount
         print(f"Amount ${deposit_amount:.2f} deposited successfully.")
 
     def withdraw(self) -> None:
-        withdraw_amount = float(input("Amount of withdrawal: "))
+        withdraw_amount = self.get_user_input("withdraw")
         if self.balance >= withdraw_amount:
             self.balance -= withdraw_amount
             print(f"Amount ${withdraw_amount:.2f} withdrawn successfully.")
